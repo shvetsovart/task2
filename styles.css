@@ -3,7 +3,8 @@
     margin: 0;
 }
 
-body {
+body
+{
     width: 210mm;
     height: 297mm;
     background-image: url("images/background.jpg");
@@ -12,30 +13,35 @@ body {
     margin: auto;
 }
 
-.header {
+.header
+{
     padding-top: 10px;
     display: flex;
     justify-content: center;
 }
 
-.logo img {
+.logo img
+{
     width: 100px;
 }
 
-.logo-text img {
+.logo-text img
+{
     margin-left: 2px;
     margin-top: 12px;
     width: 625px;
 }
 
-.description {
+.description
+{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: -15px;
 }
 
-.description p {
+.description p
+{
     font-family: "Zier";
     text-align: center;
     margin-top: 5px;
@@ -44,25 +50,29 @@ body {
     font-size: 15px;
 }
 
-.description img {
+.description img
+{
     width: 10px;
     margin-top: -12px;
 }
 
-.hr {
+.hr
+{
     display: flex;
     align-items: center;
     margin-top: 15px;
     margin-left: 36px;
 }
 
-.hr img {
+.hr img
+{
     width: 644px;
     margin-left: 121px;
     margin-top: -25px;
 }
 
-.hr p {
+.hr p
+{
     font-size: 10px;
     font-family: "GotikaBlack";
     transform: rotate(180deg);
@@ -72,7 +82,8 @@ body {
     margin-bottom: 12px;
 }
 
-.articles {
+.articles
+{
     border: 3px solid #000;
     border-radius: 3px;
     margin-left: 35px;
@@ -81,19 +92,22 @@ body {
     padding: 5px;
 }
 
-.ads {
+.ads
+{
     display: flex;
     margin-left: 35px;
     width: 91%;
     height: 75px;
 }
 
-.ads img {
+.ads img
+{
     margin-top: -10px;
     margin-left: 7px;
 }
 
-.ad {
+.ad
+{
     display: flex;
     border: 3px solid #000;
     margin-left: 5px;
@@ -101,16 +115,18 @@ body {
     width: 252px;
 }
 
-.ad p {
+.ad p
+{
     font-style: italic;
     font-family: "Inkulinati";
-    line-height: 0.8;
+    line-height: .8;
     font-size: 30px;
     margin-left: 5px;
     margin-top: 3px;
 }
 
-.ad p span {
+.ad p span
+{
     margin-top: -100px;
     letter-spacing: 10px;
     font-family: "ChampionGothic";
@@ -118,7 +134,8 @@ body {
     font-size: 37px;
 }
 
-.ad .description {
+.ad .description
+{
     margin-top: -14px;
     margin-left: 0;
     line-height: 1.1;
@@ -128,11 +145,13 @@ body {
     font-style: normal;
 }
 
-.weather {
+.weather
+{
     margin-left: 10px;
 }
 
-.weather .title {
+.weather .title
+{
     margin-top: -3px;
     font-size: 13px;
     font-family: "Inkulinati";
@@ -140,7 +159,8 @@ body {
     text-transform: uppercase;
 }
 
-.weather .info {
+.weather .info
+{
     margin-left: 2px;
     margin-top: -13px;
     letter-spacing: 0.3px;
@@ -148,40 +168,47 @@ body {
     font-family: "FirstReign";
 }
 
-.weather .info span {
+.weather .info span
+{
     font-family: "CloisterBlack";
 }
 
-.zodiac {
+.zodiac
+{
     margin-left: 13px;
     margin-top: -20px;
     width: 130px;
 }
 
-.zodiac .title {
+.zodiac .title
+{
     font-family: "GotikaBlack";
 }
 
-.zodiac .info {
+.zodiac .info
+{
     font-family: "CloisterBlack";
     margin-top: -10px;
-    line-height: 0.97;
+    line-height: .97;
     font-size: 12px;
 }
 
-.zodiac .info span {
+.zodiac .info span
+{
     font-style: bold;
     font-family: "Zodiac";
 }
 
-.zodiac img {
+.zodiac img
+{
     position: absolute;
     margin-top: -33px;
     margin-left: 55px;
     transform: rotate(30deg);
 }
 
-.newspaper-info p {
+.newspaper-info p
+{
     margin-top: -2px;
     margin-left: 70px;
     padding: 0;
@@ -190,17 +217,20 @@ body {
     width: 93px;
 }
 
-.newspaper-info img {
+.newspaper-info img
+{
     position: absolute;
     margin-top: 0;
     margin-left: 6px;
 }
 
-.newspaper-info span {
+.newspaper-info span
+{
     color: #FFB12A;
 }
 
-.title-and-photo {
+.title-and-photo
+{
     display: flex;
     width: 100%;
     height: 185px;
@@ -209,7 +239,8 @@ body {
     padding: 0;
 }
 
-.title-and-photo .title {
+.title-and-photo .title
+{
     font-size: 200px;
     font-family: "ChampionGothic";
     text-transform: uppercase;
@@ -218,20 +249,23 @@ body {
     padding: 0;
 }
 
-.title-and-photo div {
+.title-and-photo div
+{
     margin-top: 23px;
     margin-left: 30px;
 }
 
-.title-and-photo-description {
+.title-and-photo-description
+{
     font-size: 8px;
     font-family: "Zier";
     width: 400px;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
 }
 
-.title-and-articles {
+.title-and-articles
+{
     display: flex;
     width: 100%;
     height: 370;
@@ -240,7 +274,8 @@ body {
     padding: 0;
 }
 
-.title-and-articles p {
+.title-and-articles p
+{
     font-size: 200px;
     font-family: "ChampionGothic";
     text-transform: uppercase;
@@ -251,12 +286,14 @@ body {
     height: 370px;
 }
 
-.first-text {
+.first-text
+{
     width: 205px;
     height: 375px;
 }
 
-.first-text .main-text {
+.first-text .main-text
+{
     height: 45px;
     margin-top: 10px;
     display: flex;
@@ -268,13 +305,15 @@ body {
     width: 100%;
 }
 
-.first-text span {
+.first-text span
+{
     font-weight: normal;
     margin-top: -5px;
     font-size: 30px;
 }
 
-.first-text .default-text {
+.first-text .default-text
+{
     height: 255px;
     margin-top: 7px;
     font-size: 10px;
@@ -283,7 +322,8 @@ body {
     width: 100%;
 }
 
-.first-text .turn-over {
+.first-text .turn-over
+{
     height: 47px;
     margin-top: 8px;
     font-size: 18px;
@@ -291,12 +331,14 @@ body {
     width: 100%;
 }
 
-.second-text-spoiler {
+.second-text-spoiler
+{
     height: 100%;
     width: 30px;
 }
 
-.second-text-spoiler p {
+.second-text-spoiler p
+{
     font-size: 19.6px;
     position: absolute;
     transform: rotate(-90deg);
@@ -306,18 +348,21 @@ body {
     width: 370px;
 }
 
-.second-text-main {
+.second-text-main
+{
     height: 370px;
 }
 
-.second-text-continued {
+.second-text-continued
+{
     margin-left: -5px;
     position: relative;
     width: 123px;
     height: 90px;
 }
 
-.second-text-continued::before {
+.second-text-continued::before
+{
     content: '';
     position: absolute;
     border-radius: 1px;
@@ -329,7 +374,8 @@ body {
     z-index: -1;
 }
 
-.second-text-continued p {
+.second-text-continued p
+{
     margin-top: 10px;
     margin-left: 8.5px;
     text-align: center;
@@ -338,7 +384,8 @@ body {
     color: #DADADA;
 }
 
-.second-text-main .second-text-default {
+.second-text-main .second-text-default
+{
     font-family: "CloisterBlack";
     text-transform: none;
     transform: rotate(-90deg);
@@ -351,13 +398,15 @@ body {
     margin-left: -55px;
 }
 
-.second-text-default span {
+.second-text-default span
+{
     font-weight: normal;
     margin-top: -5px;
     font-size: 30px;
 }
 
-.second-text-main .second-text-extension {
+.second-text-main .second-text-extension
+{
     font-family: "CloisterBlack";
     text-transform: none;
     transform: rotate(-90deg);
@@ -369,21 +418,24 @@ body {
     margin-left: -7px;
 }
 
-.second-text-photo img {
+.second-text-photo img
+{
     position: absolute;
     transform: rotate(-90deg);
     margin-left: -7px;
     margin-top: 157px;
 }
 
-.title-end {
+.title-end
+{
     position: relative;
     width: 94.9%;
     height: 176px;
     margin-left: 12px;
 }
 
-.title-end::before {
+.title-end::before
+{
     content: '';
     position: absolute;
     border-radius: 3px;
@@ -395,49 +447,56 @@ body {
     z-index: -1;
 }
 
-.title-end p {
+.title-end p
+{
     letter-spacing: 2.1px;
     display: inline-block;
     font-size: 200px;
     font-family: "ChampionGothic";
     color: #DADADA;
-    line-height: 0.8;
+    line-height: .8;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
 }
 
-.footer p {
+.footer p
+{
     font-family: "FirstReign";
     text-transform: uppercase;
-    line-height: 0.97;
+    line-height: .97;
     font-size: 23px;
     letter-spacing: 4px;
     font-style: light;
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-align: center;
 }
 
-.footer img {
+.footer img
+{
     margin-left: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
-.spoilers {
+.spoilers
+{
     display: flex;
 }
 
-.first-spoiler {
+.first-spoiler
+{
     display: flex;
     margin-left: 20px;
 }
 
-.first-spoiler img {
+.first-spoiler img
+{
     margin-top: 12px;
 }
 
-.first-spoiler p {
+.first-spoiler p
+{
     margin-top: -1px;
     margin-left: 5px;
     text-align: left;
@@ -448,12 +507,14 @@ body {
     font-family: "ChampionGothic";
 }
 
-.first-spoiler p span {
+.first-spoiler p span
+{
     margin-left: 5px;
     font-size: 15px;
 }
 
-.first-spoiler .digit {
+.first-spoiler .digit
+{
     font-family: "Inkulinati";
     font-weight: bold;
     margin-top: 2px;
@@ -461,18 +522,21 @@ body {
     font-size: 50px;
 }
 
-.second-spoiler {
+.second-spoiler
+{
     display: flex;
     margin-left: 40px;
 }
 
-.second-spoiler p {
+.second-spoiler p
+{
     font-weight: bold;
     margin-top: 15px;
     margin-left: 10px;
 }
 
-.second-spoiler .digit {
+.second-spoiler .digit
+{
     font-weight: normal;
     margin-top: -15px;
     margin-left: -2px;
@@ -480,22 +544,25 @@ body {
     font-family: "CloisterBlack";
 }
 
-.third-spoiler {
+.third-spoiler
+{
     display: flex;
     margin-left: 40px;
 }
 
-.third-spoiler p {
+.third-spoiler p
+{
     text-align: left;
     text-transform: none;
     font-size: 20px;
-    line-height: 0.9;
+    line-height: .9;
     font-family: "GothicMother";
     margin-top: 2px;
     margin-left: 10px;
 }
 
-.third-spoiler .digit {
+.third-spoiler .digit
+{
     font-weight: normal;
     margin-top: -3px;
     margin-left: 2px;
@@ -503,12 +570,14 @@ body {
     font-family: "ChampionGothic";
 }
 
-.fourth-spoiler {
+.fourth-spoiler
+{
     display: flex;
     margin-left: 10px;
 }
 
-.fourth-spoiler p {
+.fourth-spoiler p
+{
     text-align: right;
     line-height: 1.1;
     font-weight: bold;
@@ -518,11 +587,13 @@ body {
     margin-left: 20px;
 }
 
-.fourth-spoiler p span {
+.fourth-spoiler p span
+{
     font-size: 10px;
 }
 
-.fourth-spoiler .digit {
+.fourth-spoiler .digit
+{
     font-weight: bold;
     margin-top: -20px;
     margin-left: 2px;
@@ -530,63 +601,72 @@ body {
     font-family: "ParselTongue";
 }
 
-@font-face {
+@font-face
+{
     font-family: "ParselTongue";
     src: url("fonts/PARSELTO.TTF") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: "GothicMother";
     src: url("fonts/Gothic-Mother.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: "Inkulinati";
     src: url("fonts/Inkulinati-Regular.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: "Zier";
     src: url("fonts/ZierinitialenTwo.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: "ChampionGothic";
     src: url("fonts/ChampionGothic.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: "GotikaBlack";
     src: url("fonts/GotikaBlack.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: "CloisterBlack";
     src: url("fonts/CloisterBlackLight.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: "FirstReign";
     src: url("fonts/FirstReign.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: "Zodiac";
     src: url("fonts/ZodiacSigns.ttf") format("truetype");
     font-style: normal;
