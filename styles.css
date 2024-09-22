@@ -9,7 +9,6 @@ body
     height: 297mm;
     background-image: url("images/background.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     margin: auto;
 }
 
@@ -460,7 +459,7 @@ body
     text-transform: uppercase;
 }
 
-.footer p
+.spoiler p
 {
     font-family: "FirstReign";
     text-transform: uppercase;
@@ -473,7 +472,7 @@ body
     text-align: center;
 }
 
-.footer img
+.spoiler img
 {
     margin-left: 15px;
     margin-bottom: 0;
@@ -599,6 +598,36 @@ body
     margin-left: 2px;
     font-size: 70px;
     font-family: "ParselTongue";
+}
+
+.durov
+{
+    height: 800px;
+}
+
+.space {
+    height: 10px;
+}
+
+.durov .main-title {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "GotikaBlack";
+    font-size: 37px;
+}
+
+.durov .first-column {
+    margin-top: -20px;
+    margin-left: 20px;
+    width: 200px;
+    font-family: "GothicMother";
+}
+
+.durov .first-column span {
+    font-weight: normal;
+    margin-top: -5px;
+    font-size: 50px;
 }
 
 @font-face
