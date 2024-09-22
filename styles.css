@@ -605,11 +605,13 @@ body
     height: 800px;
 }
 
-.space {
+.space
+{
     height: 10px;
 }
 
-.durov .main-title {
+.durov .main-title
+{
     margin-top: 10px;
     text-transform: uppercase;
     text-align: center;
@@ -617,14 +619,16 @@ body
     font-size: 37px;
 }
 
-.durov .first-column {
+.durov .first-column
+{
     margin-top: -20px;
     margin-left: 20px;
     width: 200px;
     font-family: "GothicMother";
 }
 
-.durov .first-column span {
+.durov .first-column span
+{
     font-weight: normal;
     margin-top: -5px;
     font-size: 50px;
