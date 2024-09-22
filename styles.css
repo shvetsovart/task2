@@ -12,6 +12,12 @@ body
     margin: auto;
 }
 
+.first-page {
+    width: 210mm;
+    height: 297mm;
+    border: 1px solid #9a9a9a;
+}
+
 .header
 {
     padding-top: 10px;
@@ -21,12 +27,12 @@ body
 
 .logo img
 {
+    margin-right: 5px;
     width: 100px;
 }
 
 .logo-text img
 {
-    margin-left: 2px;
     margin-top: 12px;
     width: 625px;
 }
@@ -602,7 +608,9 @@ body
 
 .durov
 {
-    height: 800px;
+    width: 210mm;
+    height: 297mm;
+    border: 1px solid #9a9a9a;
 }
 
 .space
