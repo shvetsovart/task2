@@ -12,10 +12,9 @@ body
     margin: auto;
 }
 
-.first-page {
+main {
     width: 210mm;
     height: 297mm;
-    border: 1px solid #9a9a9a;
 }
 
 .header
@@ -181,7 +180,7 @@ body
 .zodiac
 {
     margin-left: 13px;
-    margin-top: -20px;
+    margin-top: -17px;
     width: 130px;
 }
 
@@ -234,139 +233,139 @@ body
     color: #FFB12A;
 }
 
-.title-and-photo
+.articles .title
 {
-    display: flex;
-    width: 100%;
-    height: 185px;
-    margin: 0;
-    margin-left: 12px;
-    padding: 0;
-}
-
-.title-and-photo .title
-{
-    font-size: 200px;
-    font-family: "ChampionGothic";
+    position: absolute;
+    font: 200px "ChampionGothic";
     text-transform: uppercase;
     line-height: 0.92;
-    margin: 0;
-    padding: 0;
+    margin-top: -15px;
+    margin-left: 5px;
 }
 
-.title-and-photo div
+.articles .title .first-line
 {
-    margin-top: 23px;
-    margin-left: 30px;
+    letter-spacing: 5px;
 }
 
-.title-and-photo-description
+.articles .title .who
 {
-    font-size: 8px;
+    letter-spacing: 2.15px;
+}
+
+.articles .title .last-line
+{
+    letter-spacing: 5.5px;
+    color: #dadada;
+}
+
+.articles .title .last-line::before
+{
+    margin-top: 15px;
+    content: '';
+    position: absolute;
+    border-radius: 3px;
+    width: 700px;
+    height: 176px;
+    background-color: #000;
+    z-index: -1;
+}
+
+.articles .main-photo
+{
+    float: right;
+    margin-top: 8.5px;
+    margin-right: 10px;
+}
+
+.articles .main-photo p
+{
+    font-size: 7px;
     font-family: "Zier";
-    width: 400px;
-    margin-left: 0;
+    width: 425px;
     margin-top: 0;
+    margin-left: 3px;
 }
 
-.title-and-articles
+.main-text
 {
-    display: flex;
-    width: 100%;
-    height: 370;
-    margin: 0;
-    margin-left: 12px;
-    padding: 0;
+    float: left;
+    width: 208px;
+    font: 10px "CloisterBlack";
+    line-height: 0.88;
+    margin-left: 325px;
+    margin-top: -10px;
 }
 
-.title-and-articles p
+.main-text::first-letter
 {
-    font-size: 200px;
-    font-family: "ChampionGothic";
-    text-transform: uppercase;
-    line-height: 0.92;
-    margin: 0;
-    margin-right: 5px;
-    padding: 0;
-    height: 370px;
+    float: left;
+	font-weight: normal;
+    font-size: 29px;
 }
 
-.first-text
+.main-text .first-paragraph
 {
-    width: 205px;
-    height: 375px;
-}
-
-.first-text .main-text
-{
-    height: 45px;
-    margin-top: 10px;
-    display: flex;
-    align-items: top;
-    font-size: 10px;
+    font: 10px;
     font-weight: bold;
-    font-family: "CloisterBlack";
-    text-transform: none;
-    width: 100%;
 }
 
-.first-text span
+.main-text .turn-over
 {
-    font-weight: normal;
-    margin-top: -5px;
-    font-size: 30px;
+    font: 18px "ChampionGothic";
+    text-transform: uppercase;
+    line-height: 0.88;
 }
 
-.first-text .default-text
-{
-    height: 255px;
-    margin-top: 7px;
-    font-size: 10px;
-    font-family: "CloisterBlack";
-    text-transform: none;
-    width: 100%;
-}
-
-.first-text .turn-over
-{
-    height: 47px;
-    margin-top: 8px;
-    font-size: 18px;
-    font-family: "ChampionGothic";
-    width: 100%;
-}
-
-.second-text-spoiler
-{
-    height: 100%;
-    width: 30px;
+.second-text-spoiler {
+    margin: 0;
+    float: left;
+    width: 23px;
+    height: 370px;
 }
 
 .second-text-spoiler p
 {
-    font-size: 19.6px;
+    font: 19.2px "ChampionGothic";
+    text-transform: uppercase;
     position: absolute;
     transform: rotate(-90deg);
-    margin-left: -171px;
-    margin-top: 180px;
-    height: 18px;
+    margin-left: -178px;
+    margin-top: 152px;
+    height: 25px;
     width: 370px;
 }
 
-.second-text-main
+.second-text
 {
-    height: 370px;
+    float: left;
+    height: 355px;
 }
 
-.second-text-continued
+.second-text .continued
 {
-    margin-left: -5px;
+    margin-top: -16px;
+    margin-left: -4px;
     position: relative;
-    width: 123px;
+    width: 145px;
     height: 90px;
 }
 
-.second-text-continued::before
+.second-text .continued p
+{
+    font-family: "ChampionGothic";
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-left: 8.6px;
+    line-height: .95;
+    letter-spacing: 2.8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    color: #DADADA;
+}
+
+.second-text .continued::before
 {
     content: '';
     position: absolute;
@@ -379,231 +378,155 @@ body
     z-index: -1;
 }
 
-.second-text-continued p
-{
-    margin-top: 10px;
-    margin-left: 8.5px;
-    text-align: center;
-    display: inline-block;
-    font-size: 30px;
-    color: #DADADA;
-}
-
-.second-text-main .second-text-default
+.second-text .default
 {
     font-family: "CloisterBlack";
-    text-transform: none;
     transform: rotate(-90deg);
-    display: flex;
+    line-height: 0.95;
     position: absolute;
     font-size: 10px;
-    width: 135px;
+    width: 150px;
     height: 20px;
-    margin-top: 70px;
-    margin-left: -55px;
+    margin-top: 73px;
+    margin-left: -65px;
 }
 
-.second-text-default span
+.second-text .default::first-letter
+{
+    float: left;
+	font-weight: normal;
+    font-size: 29px;
+}
+
+.second-text .default span
 {
     font-weight: normal;
-    margin-top: -5px;
     font-size: 30px;
 }
 
-.second-text-main .second-text-extension
-{
-    font-family: "CloisterBlack";
-    text-transform: none;
-    transform: rotate(-90deg);
-    position: absolute;
-    font-size: 10px;
-    width: 135px;
-    height: 80px;
-    margin-top: 34px;
-    margin-left: -7px;
-}
-
-.second-text-photo img
+.elon-musk-photo
 {
     position: absolute;
     transform: rotate(-90deg);
-    margin-left: -7px;
-    margin-top: 157px;
+    margin-left: 15px;
+    margin-top: 147px;
 }
 
-.title-end
-{
-    position: relative;
-    width: 94.9%;
-    height: 176px;
-    margin-left: 12px;
-}
-
-.title-end::before
-{
-    content: '';
-    position: absolute;
-    border-radius: 3px;
-    top: 7px;
-    left: 3px;
-    width: 100%;
-    height: 96%;
-    background-color: #000;
-    z-index: -1;
-}
-
-.title-end p
-{
-    letter-spacing: 2.1px;
-    display: inline-block;
-    font-size: 200px;
-    font-family: "ChampionGothic";
-    color: #DADADA;
-    line-height: .8;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-.spoiler p
+.title-description p
 {
     font-family: "FirstReign";
     text-transform: uppercase;
     line-height: .97;
     font-size: 23px;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     font-style: light;
-    margin-top: 5px;
+    margin-top: 733px;
     margin-bottom: 0;
     text-align: center;
 }
 
-.spoiler img
+.title-description img
 {
-    margin-left: 15px;
-    margin-bottom: 0;
-}
-
-.spoilers
-{
-    display: flex;
+    margin-left: 22px;
+    margin-bottom: 0px;
 }
 
 .first-spoiler
 {
+    float: left;
     display: flex;
-    margin-left: 20px;
-}
-
-.first-spoiler img
-{
-    margin-top: 12px;
+    margin: 0 0 0 30px;
+    padding: 0;
 }
 
 .first-spoiler p
 {
-    margin-top: -1px;
-    margin-left: 5px;
-    text-align: left;
-    font-size: 20px;
-    text-transform: none;
-    letter-spacing: normal;
-    line-height: 0.8;
-    font-family: "ChampionGothic";
+    margin-top: 0;
+    font: 20px "ChampionGothic";
+    line-height: .8;
 }
 
-.first-spoiler p span
+.first-spoiler span
 {
-    margin-left: 5px;
+    margin-left: 10px;
     font-size: 15px;
 }
 
 .first-spoiler .digit
 {
     font-family: "Inkulinati";
-    font-weight: bold;
-    margin-top: 2px;
-    margin-left: 5px;
-    font-size: 50px;
+    font-size: 60px;
+    margin: 5px 0 0 0;
 }
 
 .second-spoiler
 {
+    float: left;
     display: flex;
-    margin-left: 40px;
+    margin: 0 0 0 50px;
+    padding: 0;
 }
 
 .second-spoiler p
 {
+    text-transform: uppercase;
+    font: 45px "FirstReign";
     font-weight: bold;
-    margin-top: 15px;
-    margin-left: 10px;
+    margin: -3px 0 0 0;
 }
 
 .second-spoiler .digit
 {
-    font-weight: normal;
     margin-top: -15px;
-    margin-left: -2px;
-    font-size: 70px;
-    font-family: "CloisterBlack";
+    font-weight: normal;
+    font: 65px "CloisterBlack";
 }
 
 .third-spoiler
 {
+    float: left;
     display: flex;
-    margin-left: 40px;
+    margin: 0 0 0 40px;
+    padding: 0;
 }
 
 .third-spoiler p
 {
-    text-align: left;
-    text-transform: none;
-    font-size: 20px;
+    font: 20px "GothicMother";
     line-height: .9;
-    font-family: "GothicMother";
-    margin-top: 2px;
-    margin-left: 10px;
+    letter-spacing: 3px;
+    margin: 10px 0 0 0;
 }
 
 .third-spoiler .digit
 {
-    font-weight: normal;
-    margin-top: -3px;
-    margin-left: 2px;
-    font-size: 55px;
-    font-family: "ChampionGothic";
+    margin: -17px 0 0 5px;
+    font: 55px "ChampionGothic";
 }
 
-.fourth-spoiler
-{
+.fourth-spoiler {
+    float: left;
     display: flex;
-    margin-left: 10px;
+    margin: 0 0 0 20px;
+    padding: 0;
 }
 
-.fourth-spoiler p
-{
+.fourth-spoiler p {
+    margin: 5px 0 0 0;
+    font: 20px "Zier";
+    font-weight: bold;
     text-align: right;
-    line-height: 1.1;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: "Zier";
-    margin-top: 7px;
-    margin-left: 20px;
 }
 
-.fourth-spoiler p span
-{
-    font-size: 10px;
+.fourth-spoiler p span {
+    font-size: 12px;
 }
 
-.fourth-spoiler .digit
-{
+.fourth-spoiler .digit {
+    font: 70px "ParselTongue";
     font-weight: bold;
-    margin-top: -20px;
-    margin-left: 2px;
-    font-size: 70px;
-    font-family: "ParselTongue";
+    margin: -20px 0 0 5px;
+    transform: rotate(-15deg);
 }
 
 @font-face
