@@ -13,13 +13,34 @@ body
     margin: auto;
 }
 
+body *
+{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.vanish-text
+{
+    display: none;
+}
+
+.vanish-text:checked ~ .logo-section .logo-text .main,
+.vanish-text:checked ~ .logo-section p,
+.vanish-text:checked ~ .hr p,
+.vanish-text:checked ~ .ads p,
+.vanish-text:checked ~ .articles p,
+.vanish-text:checked ~ .articles .second-text .continued {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
 main
 {
     width: 210mm;
     height: 297mm;
 }
 
-.header
+.logo-section
 {
     padding-top: 10px;
     display: flex;
@@ -216,6 +237,7 @@ main
 .newspaper-info img
 {
     position: absolute;
+    cursor: pointer;
     margin-top: 0;
     margin-left: 6px;
 }
@@ -280,7 +302,7 @@ main
 {
     float: right;
     margin-top: 8.5px;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .articles .main-photo p

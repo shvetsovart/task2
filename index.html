@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Хочу хардкор -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,14 @@
 </head>
 <body>
 <main>
-    <header class="header">
+    <input type="checkbox" id="vanish-text" class="vanish-text">
+    <header class="logo-section">
         <div class="logo">
             <img src="images/logo.png" alt="Daily Prophet Logo" width="100" height="107">
         </div>
 
         <div class="logo-text">
-            <img src="images/logo-text.png" alt="Daily Prophet Text" width="625" height="97">
+            <img class="main" src="images/logo-text.png" alt="Daily Prophet Text" width="625" height="97">
 
             <div class="description">
                 <img src="images/star.png" alt="Star" width="10" height="11">
@@ -63,7 +65,9 @@
         </section>
         <img src="images/black-rectangle.png" width="8" height="80" alt="Separator">
         <section class="newspaper-info">
-            <img src="images/day.png" width="60" height="60" alt="Day of the week">
+            <label for="vanish-text">
+                <img src="images/day.png" width="60" height="60" alt="Day of the week">
+            </label>
             <p>
                 Saturday,<br>
                 September 21st 2024<br>
