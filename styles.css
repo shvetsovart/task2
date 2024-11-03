@@ -1,16 +1,9 @@
-@page
-{
-    size: A4;
-    margin: 0;
-}
-
 body
 {
-    width: 210mm;
-    height: 297mm;
     background-image: url("images/background.jpg");
     background-size: cover;
-    margin: auto;
+    margin: 0;
+    padding-bottom: 20px;
 }
 
 body *
@@ -36,27 +29,25 @@ body *
 
 main
 {
-    width: 210mm;
-    height: 297mm;
+    width: 100%;
 }
 
 .logo-section
 {
     padding-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .logo img
 {
     margin-right: 5px;
-    width: 100px;
+    margin-left: 10px;
 }
 
 .logo-text img
 {
     margin-top: 12px;
-    width: 625px;
 }
 
 .description
@@ -71,39 +62,39 @@ main
 {
     font-family: "Zier";
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 15px;
+    font-size: 22px;
 }
 
 .description img
 {
-    width: 10px;
-    margin-top: -12px;
+    width: 20px;
+    height: 20px;
+    margin-top: -15px;
 }
 
 .hr
 {
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: 36px;
 }
 
 .hr img
 {
-    width: 644px;
-    margin-left: 121px;
+    margin-left: -15px;
     margin-top: -25px;
 }
 
 .hr p
 {
-    font-size: 10px;
+    font-size: 16px;
     font-family: "GotikaBlack";
+    text-wrap: nowrap;
     transform: rotate(180deg);
-    margin-right: -130px;
     margin-left: 0px;
     margin-top: -13px;
     margin-bottom: 12px;
@@ -112,24 +103,22 @@ main
 .ads
 {
     display: flex;
-    margin-left: 35px;
-    width: 91%;
-    height: 75px;
+    width: 100%;
 }
 
 .ads img
 {
-    margin-top: -10px;
-    margin-left: 7px;
+    margin-top: -5px;
+    margin-left: 15px;
 }
 
 .ad
 {
     display: flex;
     border: 3px solid #000;
-    margin-left: 5px;
-    height: 60px;
-    width: 252px;
+    margin-left: 40px;
+    height: 78px;
+    width: 300px;
 }
 
 .ad p
@@ -137,9 +126,9 @@ main
     font-style: italic;
     font-family: "Inkulinati";
     line-height: .8;
-    font-size: 30px;
+    font-size: 36px;
     margin-left: 5px;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 .ad p span
@@ -148,7 +137,7 @@ main
     letter-spacing: 10px;
     font-family: "ChampionGothic";
     text-transform: uppercase;
-    font-size: 37px;
+    font-size: 47px;
 }
 
 .ad .description
@@ -158,7 +147,7 @@ main
     line-height: 1.1;
     text-align: center;
     font-family: "FirstReign";
-    font-size: 25px;
+    font-size: 30px;
     font-style: normal;
 }
 
@@ -170,7 +159,7 @@ main
 .weather .title
 {
     margin-top: -3px;
-    font-size: 13px;
+    font-size: 17px;
     font-family: "Inkulinati";
     font-style: bold;
     text-transform: uppercase;
@@ -179,9 +168,10 @@ main
 .weather .info
 {
     margin-left: 2px;
-    margin-top: -13px;
-    letter-spacing: .3px;
-    font-size: 10px;
+    margin-top: -18px;
+    word-spacing: 4px;
+    font-size: 13px;
+    text-align: justify;
     font-family: "FirstReign";
 }
 
@@ -194,20 +184,22 @@ main
 {
     margin-left: 13px;
     margin-top: -17px;
-    width: 130px;
+    width: 205px;
 }
 
 .zodiac .title
 {
     font-family: "GotikaBlack";
+    font-size: 25px;
+    margin: 8px 0 0 0;
 }
 
 .zodiac .info
 {
     font-family: "CloisterBlack";
-    margin-top: -10px;
-    line-height: .97;
-    font-size: 12px;
+    margin-top: 3px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .zodiac .info span
@@ -219,27 +211,32 @@ main
 .zodiac img
 {
     position: absolute;
-    margin-top: -33px;
-    margin-left: 55px;
+    margin-top: -25px;
+    margin-left: 88px;
     transform: rotate(30deg);
+}
+
+.separator {
+    width: 8px;
+    height: 100px;
+    margin-left: 5px;
 }
 
 .newspaper-info p
 {
-    margin-top: -2px;
-    margin-left: 70px;
+    margin-top: 0;
+    margin-left: 98px;
     padding: 0;
     font-family: "GothicMother";
-    font-size: 12px;
-    width: 93px;
+    font-size: 17px;
 }
 
 .newspaper-info img
 {
     position: absolute;
     cursor: pointer;
-    margin-top: 0;
-    margin-left: 6px;
+    margin-top: 3px;
+    margin-left: 10px;
 }
 
 .newspaper-info span
@@ -247,13 +244,27 @@ main
     color: #ffb12a;
 }
 
+.copyright-text
+{
+    font-family: 'Zier';
+    width: 220px;
+    color: #c3c3c3;
+    font-size: 22px;
+    margin: 0 0 0 20px;
+    text-align: center;
+    word-spacing: 7px;
+    line-height: 27px;
+    padding: 10px 8px 5px 10px;
+    border-radius: 2px;
+    background-color: #000000;
+}
+
 .articles
 {
     border: 3px solid #000;
     border-radius: 3px;
     margin-left: 35px;
-    width: 710px;
-    height: 850px;
+    width: 94%;
     padding: 5px;
     overflow: hidden;
 }
@@ -261,7 +272,7 @@ main
 .articles .title
 {
     position: absolute;
-    font: 200px "ChampionGothic";
+    font: 350px "ChampionGothic";
     text-transform: uppercase;
     line-height: .92;
     margin-top: -15px;
@@ -282,18 +293,18 @@ main
 .articles .title .last-line
 {
     white-space: nowrap;
-    letter-spacing: 5.5px;
+    letter-spacing: 2px;
     color: #dadada;
 }
 
 .articles .title .last-line::before
 {
-    margin-top: 15px;
+    margin-top: 30px;
     content: "";
     position: absolute;
     border-radius: 3px;
-    width: 700px;
-    height: 176px;
+    width: 1165px;
+    height: 300px;
     background-color: #000;
     z-index: -2;
 }
@@ -301,15 +312,21 @@ main
 .articles .main-photo
 {
     float: right;
-    margin-top: 8.5px;
+    margin-top: 25px;
     margin-right: 8px;
+}
+
+.articles .main-photo img
+{
+    width: 700px;
+    height: 280px;
 }
 
 .articles .main-photo p
 {
-    font-size: 7px;
+    font-size: 12px;
     font-family: "Zier";
-    width: 425px;
+    width: 700px;
     margin-top: 0;
     margin-left: 3px;
 }
@@ -317,10 +334,10 @@ main
 .main-text
 {
     float: left;
-    width: 208px;
-    font: 10px "CloisterBlack";
+    width: 340px;
+    font: 17px "CloisterBlack";
     line-height: .88;
-    margin-left: 325px;
+    margin-left: 560px;
     margin-top: -10px;
 }
 
@@ -328,7 +345,7 @@ main
 {
     float: left;
     font-weight: normal;
-    font-size: 29px;
+    font-size: 40px;
 }
 
 .main-text .first-paragraph
@@ -339,7 +356,7 @@ main
 
 .main-text .turn-over
 {
-    font: 18px "ChampionGothic";
+    font: 30px "ChampionGothic";
     text-transform: uppercase;
     line-height: .88;
 }
@@ -348,21 +365,21 @@ main
 {
     margin: 0;
     float: left;
-    width: 23px;
-    height: 370px;
+    width: 40px;
+    height: 600px;
     z-index: -2;
 }
 
 .second-text-spoiler p
 {
-    font: 19.2px "ChampionGothic";
+    font: 34px "ChampionGothic";
     text-transform: uppercase;
     position: absolute;
     transform: rotate(-90deg);
-    margin-left: -178px;
-    margin-top: 152px;
-    height: 25px;
-    width: 370px;
+    margin-left: -330px;
+    margin-top: 250px;
+    height: 40px;
+    width: 700px;
 }
 
 .second-text
@@ -374,10 +391,10 @@ main
 .second-text .continued
 {
     margin-top: -16px;
-    margin-left: -4px;
+    margin-left: 15px;
     position: relative;
-    width: 145px;
-    height: 90px;
+    width: 220px;
+    height: 143px;
 }
 
 .second-text .continued p
@@ -385,12 +402,12 @@ main
     font-family: "ChampionGothic";
     text-transform: uppercase;
     margin-top: 8px;
-    margin-left: 8.6px;
-    line-height: .95;
-    letter-spacing: 2.8px;
+    margin-left: 8px;
+    line-height: .9;
+    letter-spacing: 3px;
     text-align: center;
     display: inline-block;
-    font-size: 30px;
+    font-size: 50px;
     color: #dadada;
 }
 
@@ -398,7 +415,7 @@ main
 {
     content: "";
     position: absolute;
-    border-radius: 1px;
+    border-radius: 3px;
     top: 7px;
     left: 3px;
     width: 100%;
@@ -413,18 +430,18 @@ main
     transform: rotate(-90deg);
     line-height: .95;
     position: absolute;
-    font-size: 10px;
-    width: 150px;
+    font-size: 17px;
+    width: 300px;
     height: 20px;
-    margin-top: 73px;
-    margin-left: -65px;
+    margin-top: 155px;
+    margin-left: -120px;
 }
 
 .second-text .default::first-letter
 {
     float: left;
     font-weight: normal;
-    font-size: 29px;
+    font-size: 40px;
 }
 
 .second-text .default span
@@ -437,8 +454,11 @@ main
 {
     position: absolute;
     transform: rotate(-90deg);
-    margin-left: 15px;
-    margin-top: 147px;
+    margin-left: 45px;
+    height: 220px;
+    width: auto;
+    margin-top: 298px;
+    border-radius: 3px;
 }
 
 .title-description p
@@ -446,10 +466,10 @@ main
     font-family: "FirstReign";
     text-transform: uppercase;
     line-height: .97;
-    font-size: 23px;
+    font-size: 45px;
     letter-spacing: 5px;
     font-style: light;
-    margin-top: 733px;
+    margin-top: 1290px;
     margin-bottom: 0;
     text-align: center;
 }
@@ -458,6 +478,8 @@ main
 {
     margin-left: 22px;
     margin-bottom: 0px;
+    height: 10px;
+    width: 1135px;
 }
 
 .first-spoiler
@@ -471,7 +493,7 @@ main
 .first-spoiler p
 {
     margin-top: 0;
-    font: 20px "ChampionGothic";
+    font: 30px "ChampionGothic";
     line-height: .8;
 }
 
@@ -484,22 +506,22 @@ main
 .first-spoiler .digit
 {
     font-family: "Inkulinati";
-    font-size: 60px;
-    margin: 5px 0 0 0;
+    font-size: 80px;
+    margin: 10px 0 0 5px;
 }
 
 .second-spoiler
 {
     float: left;
     display: flex;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 70px;
     padding: 0;
 }
 
 .second-spoiler p
 {
     text-transform: uppercase;
-    font: 45px "FirstReign";
+    font: 65px "FirstReign";
     font-weight: bold;
     margin: -3px 0 0 0;
 }
@@ -508,20 +530,20 @@ main
 {
     margin-top: -15px;
     font-weight: normal;
-    font: 65px "CloisterBlack";
+    font: 90px "CloisterBlack";
 }
 
 .third-spoiler
 {
     float: left;
     display: flex;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 90px;
     padding: 0;
 }
 
 .third-spoiler p
 {
-    font: 20px "GothicMother";
+    font: 40px "GothicMother";
     line-height: .9;
     letter-spacing: 3px;
     margin: 10px 0 0 0;
@@ -530,35 +552,35 @@ main
 .third-spoiler .digit
 {
     margin: -17px 0 0 5px;
-    font: 55px "ChampionGothic";
+    font: 80px "ChampionGothic";
 }
 
 .fourth-spoiler
 {
     float: left;
     display: flex;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 70px;
     padding: 0;
 }
 
 .fourth-spoiler p
 {
     margin: 5px 0 0 0;
-    font: 20px "Zier";
+    font: 40px "Zier";
     font-weight: bold;
     text-align: right;
 }
 
 .fourth-spoiler p span
 {
-    font-size: 12px;
+    font-size: 22px;
 }
 
 .fourth-spoiler .digit
 {
-    font: 70px "ParselTongue";
+    font: 100px "ParselTongue";
     font-weight: bold;
-    margin: -20px 0 0 5px;
+    margin: -20px 0 0 10px;
     transform: rotate(-15deg);
 }
 
@@ -632,4 +654,547 @@ main
     src: url("fonts/ZodiacSigns.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    body {
+        width: 210mm;
+        height: 297mm;
+        background-image: url("images/background.jpg");
+        background-size: cover;
+        margin: auto;
+        padding-bottom: 0;
+    }
+
+    main {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .logo img {
+        margin-right: 5px;
+        width: 100px;
+        height: 107px;
+    }
+
+    .logo-text .main {
+        width: 625px;
+        height: 97px;
+    }
+
+    .description p {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .description img
+    {
+        width: 10px;
+        height: 11px;
+        margin-top: -12px;
+    }
+
+    .hr
+    {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 36px;
+    }
+
+    .hr img
+    {
+        width: 630px;
+        margin-left: 121px;
+        margin-top: -25px;
+    }
+
+    .hr p
+    {
+        font-size: 10px;
+        font-family: "GotikaBlack";
+        transform: rotate(180deg);
+        margin-right: -130px;
+        margin-left: 0px;
+        margin-top: -13px;
+        margin-bottom: 12px;
+    }
+
+    .ads
+    {
+        display: flex;
+        width: 100%;
+        height: 75px;
+    }
+
+    .ad
+    {
+        display: flex;
+        border: 3px solid #000;
+        margin-left: 40px;
+        height: 60px;
+        width: 252px;
+    }
+
+    .ad p
+    {
+        font-style: italic;
+        font-family: "Inkulinati";
+        line-height: .8;
+        font-size: 30px;
+        margin-left: 5px;
+        margin-top: 3px;
+    }
+
+    .ad p span
+    {
+        margin-top: -100px;
+        letter-spacing: 10px;
+        font-family: "ChampionGothic";
+        text-transform: uppercase;
+        font-size: 37px;
+    }
+
+    .ad .description
+    {
+        margin-top: -14px;
+        margin-left: 0;
+        line-height: 1.1;
+        text-align: center;
+        font-family: "FirstReign";
+        font-size: 25px;
+        font-style: normal;
+    }
+
+    .weather
+    {
+        margin-left: 10px;
+    }
+
+    .weather .title
+    {
+        margin-top: -3px;
+        font-size: 13px;
+        font-family: "Inkulinati";
+        font-style: bold;
+        text-transform: uppercase;
+    }
+
+    .weather .info
+    {
+        margin-left: 2px;
+        margin-top: -13px;
+        font-size: 10px;
+        word-spacing: 3px;
+        font-family: "FirstReign";
+    }
+
+    .weather .info span
+    {
+        font-family: "CloisterBlack";
+    }
+
+    .zodiac
+    {
+        margin-left: 17px;
+        margin-top: -17px;
+        width: 115px;
+    }
+
+    .zodiac .title
+    {
+        margin-top: 12px;
+        font-family: "GotikaBlack";
+        font-size: 14px;
+    }
+
+    .zodiac .info
+    {
+        font-family: "CloisterBlack";
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: .98;
+        width: 110px;
+    }
+
+    .zodiac .info span
+    {
+        font-style: bold;
+        font-family: "Zodiac";
+    }
+
+    .zodiac img
+    {
+        position: absolute;
+        margin-top: -13px;
+        margin-left: 49px;
+        transform: rotate(30deg);
+        width: 10px;
+        height: 11px;
+    }
+
+    .separator {
+        width: 6px;
+        height: 75px;
+        margin-left: 5px;
+    }
+
+    .newspaper-info p
+    {
+        margin-top: 0;
+        margin-left: 70px;
+        padding: 0;
+        font-family: "GothicMother";
+        font-size: 12px;
+        width: 93px;
+    }
+
+    .newspaper-info img
+    {
+        position: absolute;
+        cursor: pointer;
+        margin-top: 0;
+        margin-left: 6px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .newspaper-info span
+    {
+        color: #ffb12a;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .articles
+    {
+        border: 3px solid #000;
+        border-radius: 3px;
+        margin-left: 35px;
+        width: 710px;
+        height: 850px;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .articles .title
+    {
+        position: absolute;
+        font: 200px "ChampionGothic";
+        text-transform: uppercase;
+        line-height: .92;
+        margin-top: -15px;
+        margin-left: 5px;
+        z-index: -1;
+    }
+
+    .articles .title .first-line
+    {
+        letter-spacing: 5px;
+    }
+
+    .articles .title .who
+    {
+        letter-spacing: 2.15px;
+    }
+
+    .articles .title .last-line
+    {
+        white-space: nowrap;
+        letter-spacing: 5.5px;
+        color: #dadada;
+    }
+
+    .articles .title .last-line::before
+    {
+        margin-top: 15px;
+        content: "";
+        position: absolute;
+        border-radius: 3px;
+        width: 700px;
+        height: 176px;
+        background-color: #000;
+        z-index: -2;
+    }
+
+    .articles .main-photo
+    {
+        float: right;
+        margin-top: 8.5px;
+        margin-right: 8px;
+    }
+
+    .articles .main-photo img {
+        width: 425px;
+        height: 160px;
+    }
+
+    .articles .main-photo p
+    {
+        font-size: 7px;
+        font-family: "Zier";
+        width: 425px;
+        margin-top: 0;
+        margin-left: 3px;
+    }
+
+    .main-text
+    {
+        float: left;
+        width: 208px;
+        font: 10px "CloisterBlack";
+        line-height: .88;
+        margin-left: 325px;
+        margin-top: -10px;
+    }
+
+    .main-text::first-letter
+    {
+        float: left;
+        font-weight: normal;
+        font-size: 29px;
+    }
+
+    .main-text .first-paragraph
+    {
+        font: 10px;
+        font-weight: bold;
+    }
+
+    .main-text .turn-over
+    {
+        font: 18px "ChampionGothic";
+        text-transform: uppercase;
+        line-height: .88;
+    }
+
+    .second-text-spoiler
+    {
+        margin: 0;
+        float: left;
+        width: 23px;
+        height: 370px;
+        z-index: -2;
+    }
+
+    .second-text-spoiler p
+    {
+        font: 19.2px "ChampionGothic";
+        text-transform: uppercase;
+        position: absolute;
+        transform: rotate(-90deg);
+        margin-left: -178px;
+        margin-top: 152px;
+        height: 25px;
+        width: 370px;
+    }
+
+    .second-text
+    {
+        float: left;
+        height: 355px;
+    }
+
+    .second-text .continued
+    {
+        margin-top: -16px;
+        margin-left: -4px;
+        position: relative;
+        width: 145px;
+        height: 90px;
+    }
+
+    .second-text .continued p
+    {
+        font-family: "ChampionGothic";
+        text-transform: uppercase;
+        margin-top: 8px;
+        margin-left: 8.6px;
+        line-height: .95;
+        letter-spacing: 2.8px;
+        text-align: center;
+        display: inline-block;
+        font-size: 30px;
+        color: #dadada;
+    }
+
+    .second-text .continued::before
+    {
+        content: "";
+        position: absolute;
+        border-radius: 1px;
+        top: 7px;
+        left: 3px;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: -3;
+    }
+
+    .second-text .default
+    {
+        font-family: "CloisterBlack";
+        transform: rotate(-90deg);
+        line-height: .95;
+        position: absolute;
+        font-size: 10px;
+        width: 150px;
+        height: 20px;
+        margin-top: 73px;
+        margin-left: -65px;
+    }
+
+    .second-text .default::first-letter
+    {
+        float: left;
+        font-weight: normal;
+        font-size: 29px;
+    }
+
+    .second-text .default span
+    {
+        font-weight: normal;
+        font-size: 30px;
+    }
+
+    .elon-musk-photo
+    {
+        position: absolute;
+        transform: rotate(-90deg);
+        margin-left: 15px;
+        width: 112px;
+        height: 143px;
+        margin-top: 147px;
+        border-radius: 0;
+    }
+
+    .title-description p
+    {
+        font-family: "FirstReign";
+        text-transform: uppercase;
+        line-height: .97;
+        font-size: 23px;
+        letter-spacing: 5px;
+        font-style: light;
+        margin-top: 733px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .title-description img
+    {
+        margin-left: 22px;
+        margin-bottom: 0px;
+        height: 10px;
+        width: 675px;
+    }
+
+    .first-spoiler
+    {
+        float: left;
+        display: flex;
+        margin: 0 0 0 30px;
+        padding: 0;
+    }
+
+    .first-spoiler p
+    {
+        margin-top: 0;
+        font: 20px "ChampionGothic";
+        line-height: .8;
+    }
+
+    .first-spoiler span
+    {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .first-spoiler .digit
+    {
+        font-family: "Inkulinati";
+        font-size: 60px;
+        margin: 5px 0 0 0;
+    }
+
+    .second-spoiler
+    {
+        float: left;
+        display: flex;
+        margin: 0 0 0 50px;
+        padding: 0;
+    }
+
+    .second-spoiler p
+    {
+        text-transform: uppercase;
+        font: 45px "FirstReign";
+        font-weight: bold;
+        margin: -3px 0 0 0;
+    }
+
+    .second-spoiler .digit
+    {
+        margin-top: -15px;
+        font-weight: normal;
+        font: 65px "CloisterBlack";
+    }
+
+    .third-spoiler
+    {
+        float: left;
+        display: flex;
+        margin: 0 0 0 40px;
+        padding: 0;
+    }
+
+    .third-spoiler p
+    {
+        font: 20px "GothicMother";
+        line-height: .9;
+        letter-spacing: 3px;
+        margin: 10px 0 0 0;
+    }
+
+    .third-spoiler .digit
+    {
+        margin: -17px 0 0 5px;
+        font: 55px "ChampionGothic";
+    }
+
+    .fourth-spoiler
+    {
+        float: left;
+        display: flex;
+        margin: 0 0 0 20px;
+        padding: 0;
+    }
+
+    .fourth-spoiler p
+    {
+        margin: 5px 0 0 0;
+        font: 20px "Zier";
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .fourth-spoiler p span
+    {
+        font-size: 12px;
+    }
+
+    .fourth-spoiler .digit
+    {
+        font: 70px "ParselTongue";
+        font-weight: bold;
+        margin: -20px 0 0 5px;
+        transform: rotate(-15deg);
+    }
 }
